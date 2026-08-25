@@ -29,7 +29,6 @@ export default function Home() {
             backgroundImage: `linear-gradient(155deg, rgba(255,255,255,.42) 2%, rgba(255,255,255,0) 36%), url('${basePath}/rhb-hero.png')`,
           }}
         >
-          <div className="hero-image-fade" aria-hidden="true" />
           <div className="line-motif line-motif-one" aria-hidden="true" />
           <div className="line-motif line-motif-two" aria-hidden="true" />
         </div>
