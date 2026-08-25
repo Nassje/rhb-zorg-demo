@@ -9,7 +9,7 @@ const navigation = [
 
 export function SiteHeader({ active }: { active: string }) {
   return (
-    <header className="site-header">
+    <header className={`site-header ${active === '/' ? 'home-header' : ''}`}>
       <a className="brand" href={`${basePath}/`} aria-label="RHB Zorg, naar home">
         <span className="brand-logo" aria-hidden="true">
           <img src={`${basePath}/rhb-logo-hq.png`} alt="" />
