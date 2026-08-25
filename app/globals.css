@@ -171,11 +171,24 @@ summary:focus-visible {
   clip-path: polygon(22% 0, 100% 0, 100% 100%, 0 100%, 35% 70%);
   filter: saturate(.92) contrast(.98);
   transform-origin: center;
-  animation: hero-image-reveal 1.15s cubic-bezier(.22, .75, .2, 1) both;
+  animation: hero-image-settle 1.55s cubic-bezier(.22, .75, .2, 1) both;
 }
-@keyframes hero-image-reveal {
-  from { opacity: 0; transform: scale(1.035); }
-  to { opacity: 1; transform: scale(1); }
+@keyframes hero-image-settle {
+  from { transform: scale(1.035); }
+  to { transform: scale(1); }
+}
+.hero-image-fade {
+  position: absolute;
+  inset: 0;
+  z-index: 4;
+  background: #061f23;
+  pointer-events: none;
+  animation: hero-dark-fade 1.45s cubic-bezier(.3, .72, .25, 1) .08s both;
+}
+@keyframes hero-dark-fade {
+  0% { opacity: 1; }
+  25% { opacity: .94; }
+  100% { opacity: 0; }
 }
 .hero-art::before {
   content: '';
@@ -497,6 +510,7 @@ summary:focus-visible {
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
   .hero-art { animation: none; }
+  .hero-image-fade { display: none; }
   .button,
   .header-cta { transition: none; }
 }
