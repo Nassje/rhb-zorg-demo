@@ -145,8 +145,14 @@ summary:focus-visible {
 .hero-actions { display: flex; flex-wrap: wrap; gap: 14px; margin-top: 34px; }
 .button {
   padding: 17px 22px;
+  min-width: 200px;
+  min-height: 50px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   border-radius: 5px;
   font-size: 12px;
+  text-align: center;
   letter-spacing: .035em;
   transition: transform .2s ease, box-shadow .2s ease, color .2s ease, background .2s ease;
 }
@@ -164,6 +170,12 @@ summary:focus-visible {
   background-repeat: no-repeat;
   clip-path: polygon(22% 0, 100% 0, 100% 100%, 0 100%, 35% 70%);
   filter: saturate(.92) contrast(.98);
+  transform-origin: center;
+  animation: hero-image-reveal 1.15s cubic-bezier(.22, .75, .2, 1) both;
+}
+@keyframes hero-image-reveal {
+  from { opacity: 0; transform: scale(1.035); }
+  to { opacity: 1; transform: scale(1); }
 }
 .hero-art::before {
   content: '';
@@ -479,11 +491,12 @@ summary:focus-visible {
   .hero-copy { padding: 118px 20px 42px; }
   .eyebrow { font-size: 10px; }
   .hero-actions { width: min(100%, 310px); display: grid; }
-  .button { text-align: center; }
+  .button { width: 100%; min-width: 0; }
 }
 
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
+  .hero-art { animation: none; }
   .button,
   .header-cta { transition: none; }
 }
