@@ -26,9 +26,21 @@ export default function Home() {
           role="img"
           aria-label="Twee mensen helpen elkaar vooruit op een heuvel"
           style={{
-            backgroundImage: `url('${basePath}/rhb-hero.png')`,
+            backgroundImage: `url('${basePath}/rhb-hero-video-poster.jpg')`,
           }}
         >
+          <video
+            className="hero-video"
+            autoPlay
+            muted
+            loop
+            playsInline
+            preload="metadata"
+            poster={`${basePath}/rhb-hero-video-poster.jpg`}
+            aria-hidden="true"
+          >
+            <source src={`${basePath}/rhb-hero-video.mp4`} type="video/mp4" />
+          </video>
           <div className="line-motif line-motif-one" aria-hidden="true" />
           <div className="line-motif line-motif-two" aria-hidden="true" />
         </div>

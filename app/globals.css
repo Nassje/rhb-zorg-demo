@@ -222,12 +222,23 @@ summary:focus-visible {
   position: absolute;
   inset: 0;
   z-index: 0;
-  background-position: center 44%;
-  background-size: cover;
+  background-position: left center;
+  background-size: 112% auto;
   background-repeat: no-repeat;
   clip-path: none;
   filter: saturate(.86) contrast(1.04);
   animation: hero-image-fade-in 1.15s ease-out both;
+}
+.hero-video {
+  position: absolute;
+  inset: 0 auto 0 0;
+  z-index: 0;
+  width: 112%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+  object-position: left center;
+  pointer-events: none;
 }
 @keyframes hero-image-fade-in {
   from { opacity: 0; }
@@ -549,9 +560,11 @@ summary:focus-visible {
     inset: 0;
     z-index: 0;
     clip-path: none;
-    background-position: 64% center;
+    background-position: 56% center;
+    background-size: cover;
     filter: saturate(.88) contrast(1.02);
   }
+  .hero-video { width: 100%; object-position: 56% center; }
   .hero-art::before {
     z-index: 1;
     background: linear-gradient(180deg, rgba(4,27,31,.08) 0%, rgba(4,27,31,.18) 34%, rgba(4,27,31,.74) 78%, rgba(4,27,31,.94) 100%);
@@ -588,6 +601,7 @@ summary:focus-visible {
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
   .hero-art { animation: none; }
+  .hero-video { display: none; }
   .button,
   .header-cta { transition: none; }
 }
