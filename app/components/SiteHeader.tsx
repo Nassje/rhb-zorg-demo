@@ -10,22 +10,22 @@ const navigation = [
   { label: 'Contact', href: '/contact' },
 ];
 
-export function SiteHeader({ active }: { active: string }) {
-  const isHome = active === '/';
+export function SiteHeader({ active, overlay = false }: { active: string; overlay?: boolean }) {
+  const isOverlay = overlay || active === '/';
   const [scrolled, setScrolled] = useState(false);
 
   useEffect(() => {
-    if (!isHome) return;
+    if (!isOverlay) return;
 
     const updateHeader = () => setScrolled(window.scrollY > 28);
     updateHeader();
     window.addEventListener('scroll', updateHeader, { passive: true });
 
     return () => window.removeEventListener('scroll', updateHeader);
-  }, [isHome]);
+  }, [isOverlay]);
 
   return (
-    <header className={`site-header ${isHome ? 'home-header' : ''} ${scrolled ? 'is-scrolled' : ''}`}>
+    <header className={`site-header ${isOverlay ? 'home-header' : ''} ${scrolled ? 'is-scrolled' : ''}`}>
       <a className="brand" href={`${basePath}/`} aria-label="RHB Zorg, naar home">
         <span className="brand-logo" aria-hidden="true">
           <img src={`${basePath}/rhb-logo-hq.png`} alt="" />
