@@ -1,3 +1,6 @@
+'use client';
+
+import { useEffect, useState } from 'react';
 import { basePath } from '../lib/basePath';
 
 const navigation = [
@@ -8,8 +11,21 @@ const navigation = [
 ];
 
 export function SiteHeader({ active }: { active: string }) {
+  const isHome = active === '/';
+  const [scrolled, setScrolled] = useState(false);
+
+  useEffect(() => {
+    if (!isHome) return;
+
+    const updateHeader = () => setScrolled(window.scrollY > 28);
+    updateHeader();
+    window.addEventListener('scroll', updateHeader, { passive: true });
+
+    return () => window.removeEventListener('scroll', updateHeader);
+  }, [isHome]);
+
   return (
-    <header className={`site-header ${active === '/' ? 'home-header' : ''}`}>
+    <header className={`site-header ${isHome ? 'home-header' : ''} ${scrolled ? 'is-scrolled' : ''}`}>
       <a className="brand" href={`${basePath}/`} aria-label="RHB Zorg, naar home">
         <span className="brand-logo" aria-hidden="true">
           <img src={`${basePath}/rhb-logo-hq.png`} alt="" />

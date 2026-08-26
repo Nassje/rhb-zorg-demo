@@ -26,7 +26,7 @@ export default function Home() {
           role="img"
           aria-label="Twee mensen helpen elkaar vooruit op een heuvel"
           style={{
-            backgroundImage: `linear-gradient(155deg, rgba(255,255,255,.42) 2%, rgba(255,255,255,0) 36%), url('${basePath}/rhb-hero.png')`,
+            backgroundImage: `url('${basePath}/rhb-hero.png')`,
           }}
         >
           <div className="line-motif line-motif-one" aria-hidden="true" />
