@@ -238,6 +238,7 @@ summary:focus-visible {
   display: block;
   object-fit: cover;
   object-position: left center;
+  filter: brightness(.78) saturate(.72) contrast(1.08);
   pointer-events: none;
 }
 @keyframes hero-image-fade-in {
@@ -250,8 +251,9 @@ summary:focus-visible {
   inset: 0;
   z-index: 1;
   background:
-    linear-gradient(90deg, rgba(3,25,29,.93) 0%, rgba(3,25,29,.76) 31%, rgba(3,25,29,.34) 57%, rgba(3,25,29,.08) 78%),
-    linear-gradient(0deg, rgba(3,25,29,.55) 0%, transparent 42%, rgba(3,25,29,.18) 100%);
+    linear-gradient(90deg, rgba(3,25,29,.95) 0%, rgba(3,25,29,.8) 31%, rgba(3,25,29,.46) 58%, rgba(3,25,29,.24) 100%),
+    linear-gradient(0deg, rgba(3,25,29,.7) 0%, transparent 45%, rgba(3,25,29,.24) 100%),
+    radial-gradient(circle at 64% 42%, transparent 0 24%, rgba(3,25,29,.12) 62%, rgba(3,25,29,.32) 100%);
 }
 .hero-art::after {
   content: '';
@@ -567,7 +569,9 @@ summary:focus-visible {
   .hero-video { width: 100%; object-position: 56% center; }
   .hero-art::before {
     z-index: 1;
-    background: linear-gradient(180deg, rgba(4,27,31,.08) 0%, rgba(4,27,31,.18) 34%, rgba(4,27,31,.74) 78%, rgba(4,27,31,.94) 100%);
+    background:
+      linear-gradient(180deg, rgba(4,27,31,.28) 0%, rgba(4,27,31,.24) 34%, rgba(4,27,31,.76) 76%, rgba(4,27,31,.96) 100%),
+      linear-gradient(90deg, rgba(4,27,31,.24), transparent 58%, rgba(4,27,31,.18));
   }
   .hero-art::after { z-index: 1; bottom: -5%; height: 12%; opacity: .82; }
   .line-motif { display: none; }
