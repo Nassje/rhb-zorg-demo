@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import { basePath } from '../lib/basePath';
 
 export function SiteFooter() {
@@ -10,11 +11,10 @@ export function SiteFooter() {
       </div>
       <div className="footer-info">
         <strong>RHB Zorg</strong>
-        <p>Persoonlijke begeleiding in regio Overijssel.</p>
         <small>Contact- en organisatiedetails worden later toegevoegd.</small>
       </div>
       <div className="footer-mark" aria-hidden="true">
-        <img src={`${basePath}/rhb-logo-hq.png`} alt="" />
+        <Image src={`${basePath}/rhb-logo-hq.png`} alt="" width={1536} height={1024} />
       </div>
     </footer>
   );

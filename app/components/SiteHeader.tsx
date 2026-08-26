@@ -1,5 +1,6 @@
 'use client';
 
+import Image from 'next/image';
 import { useEffect, useState } from 'react';
 import { basePath } from '../lib/basePath';
 
@@ -28,7 +29,7 @@ export function SiteHeader({ active, overlay = false }: { active: string; overla
     <header className={`site-header ${isOverlay ? 'home-header' : ''} ${scrolled ? 'is-scrolled' : ''}`}>
       <a className="brand" href={`${basePath}/`} aria-label="RHB Zorg, naar home">
         <span className="brand-logo" aria-hidden="true">
-          <img src={`${basePath}/rhb-logo-hq.png`} alt="" />
+          <Image src={`${basePath}/rhb-logo-hq.png`} alt="" width={1536} height={1024} />
         </span>
         <span className="brand-copy">
           <strong>RHB <em>ZORG</em></strong>

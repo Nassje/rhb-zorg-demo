@@ -21,9 +21,9 @@ export default function OverRhbZorg() {
           <h1 id="about-title">Over <span>RHB Zorg</span></h1>
           <div className="title-rule" aria-hidden="true" />
           <p className="intro">
-            RHB Zorg is een kleinschalige stichting met een warm hart voor mensen.
-            Wij bieden begeleiding en ondersteuning aan mensen die toe zijn aan
-            verandering, groei of meer grip op hun dagelijks leven.
+            RHB Zorg is een kleinschalige stichting die ambulante begeleiding biedt
+            aan mensen die ondersteuning nodig hebben bij het vergroten van hun
+            zelfredzaamheid, structuur en zelfstandigheid.
           </p>
         </div>
         <div
@@ -43,7 +43,7 @@ export default function OverRhbZorg() {
           <h2>Onze missie</h2>
           <p>
             Wij geloven dat ieder mens de kracht heeft om vooruit te komen. Onze missie
-            is om begeleiding te bieden die mensen helpt weer regie te nemen,
+            is om mensen de juiste ondersteuning te bieden om regie te nemen,
             zelfvertrouwen op te bouwen en stappen te zetten naar een betekenisvolle toekomst.
           </p>
         </article>
@@ -75,11 +75,11 @@ export default function OverRhbZorg() {
       <section className="identity-panel page-shell">
         <article>
           <p className="eyebrow">Wie wij zijn</p>
-          <h2>Betrokken professionals</h2>
+          <h2>Betrokken zorgprofessionals</h2>
           <p>
-            We werken met professionals die ruime ervaring hebben in de begeleiding van
-            mensen in verschillende levensfases en situaties. Onze aanpak is persoonlijk,
-            praktisch en altijd afgestemd op wat iemand nodig heeft.
+            Wij werken met ervaren zorgprofessionals die cliënten ondersteunen bij
+            uiteenlopende hulpvragen. Onze aanpak is persoonlijk, praktisch en afgestemd
+            op de individuele ondersteuningsbehoefte.
           </p>
           <ul className="identity-points">
             {identityPoints.map((point) => (
@@ -97,7 +97,9 @@ export default function OverRhbZorg() {
           <h2>Samen kansen creëren</h2>
           <p>
             Alles wat wij doen draait om het ondersteunen van mensen en het creëren van kansen.
-            We werken met PGB en in samenwerking met gemeenten, verwijzers en netwerkpartners.
+            Onze ambulante begeleiding kan onder andere worden ingezet vanuit een PGB.
+            Waar nodig werken we samen met betrokken zorgprofessionals en het netwerk van
+            de cliënt.
           </p>
         </article>
       </section>

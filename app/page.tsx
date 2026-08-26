@@ -15,8 +15,9 @@ export default function Home() {
           <h1 id="hero-title">Samen kijken<br />naar wat <span>wél</span> kan.</h1>
           <div className="title-rule" aria-hidden="true" />
           <p className="intro">
-            RHB Zorg biedt persoonlijke begeleiding aan mensen die meer grip,
-            structuur en zelfstandigheid in hun dagelijks leven willen ontwikkelen.
+            RHB Zorg biedt ambulante begeleiding aan mensen die ondersteuning nodig
+            hebben bij het vergroten van hun zelfredzaamheid, structuur en
+            zelfstandigheid in het dagelijks leven.
           </p>
           <div className="hero-actions">
             <a className="button primary" href={`${basePath}/wat-wij-doen`}>Ontdek wat wij doen</a>
@@ -58,12 +59,12 @@ export default function Home() {
       <section className="home-approach page-shell" aria-labelledby="approach-title">
         <div className="section-copy">
           <p className="eyebrow">Wat wij doen</p>
-          <h2 id="approach-title">Persoonlijke begeleiding, gericht op wat <span>wél</span> kan.</h2>
+          <h2 id="approach-title">Ambulante begeleiding, gericht op wat <span>wél</span> kan.</h2>
           <div className="title-rule" aria-hidden="true" />
           <p>
-            We kijken niet alleen naar wat moeilijk gaat, maar vooral naar wat iemand
-            nodig heeft om verder te komen. De begeleiding is kleinschalig, praktisch
-            en afgestemd op de persoon.
+            We kijken niet alleen naar wat moeilijk gaat, maar vooral naar welke
+            ondersteuning nodig is om verder te komen. De begeleiding is kleinschalig,
+            praktisch en afgestemd op de persoonlijke situatie.
           </p>
           <a className="text-link" href={`${basePath}/wat-wij-doen#themas`}>Bekijk onze begeleiding</a>
         </div>
@@ -112,9 +113,9 @@ export default function Home() {
             <h2 id="home-about-title">Een kleinschalige stichting met een warm hart voor mensen.</h2>
             <div className="title-rule" aria-hidden="true" />
             <p>
-              Wij bieden begeleiding en ondersteuning aan mensen die toe zijn aan
-              verandering, groei of meer grip op hun dagelijks leven — met aandacht,
-              respect en zonder oordeel.
+              Wij bieden ambulante begeleiding aan mensen die ondersteuning nodig
+              hebben bij het vergroten van hun zelfredzaamheid, structuur en
+              zelfstandigheid — met aandacht, respect en zonder oordeel.
             </p>
             <a className="text-link" href={`${basePath}/over-rhb-zorg`}>Meer over wie wij zijn</a>
           </div>

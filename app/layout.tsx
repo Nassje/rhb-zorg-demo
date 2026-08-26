@@ -9,7 +9,7 @@ const manrope = Manrope({
 
 export const metadata: Metadata = {
   title: 'RHB Zorg | Met aandacht. Vooruit door verbinding.',
-  description: 'Persoonlijke begeleiding met aandacht, respect en oog voor wat wél kan.',
+  description: 'Ambulante begeleiding met aandacht, respect en oog voor wat wél kan.',
 };
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {

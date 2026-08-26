@@ -2,17 +2,17 @@ export const services = [
   {
     icon: 'person',
     title: 'Begeleiding op maat',
-    text: 'Ondersteuning afgestemd op de persoon, de hulpvraag en de doelen die we samen vaststellen.',
+    text: 'Wij bieden individuele begeleiding die aansluit bij uw doelen en ondersteuningsbehoefte. Samen kijken we welke ondersteuning nodig is om uw zelfstandigheid en eigen regie te vergroten.',
   },
   {
     icon: 'calendar',
     title: 'Structuur & ontwikkeling',
-    text: 'We werken aan dagelijkse structuur, zelfredzaamheid, sociale vaardigheden, emotieregulatie en het vergroten van eigen regie.',
+    text: 'We ondersteunen bij het aanbrengen van structuur en dagritme, plannen en organiseren, dagelijkse vaardigheden en het vergroten van zelfredzaamheid en zelfstandigheid.',
   },
   {
     icon: 'people',
     title: 'Samenwerken aan vooruitgang',
-    text: 'Waar nodig werken we samen met ouders, het netwerk, verwijzers en andere betrokken professionals.',
+    text: 'Waar nodig werken we samen met ouders, het netwerk en andere betrokken zorgprofessionals.',
   },
 ] as const;
 
@@ -20,7 +20,7 @@ export const themes = [
   {
     icon: 'structure',
     slug: 'structuur',
-    title: 'Structuur in het dagelijks leven',
+    title: 'Structuur en dagritme',
     lead: 'Een dag die je kunt overzien geeft rust. Geen strak keurslijf, maar een ritme dat past bij hoe iemand leeft — en dat ook vol te houden is als het even tegenzit.',
     practice: [
       'Opstaan, eten, school of werk, en slapen in een volgorde die voorspelbaar voelt',
@@ -30,87 +30,111 @@ export const themes = [
     ],
   },
   {
+    icon: 'selfReliance',
+    slug: 'zelfredzaamheid',
+    title: 'Zelfredzaamheid en zelfstandigheid',
+    lead: 'Zelf kunnen wat eerder lastig was en stap voor stap meer eigen regie nemen. We oefenen in het dagelijks leven en houden ondersteuning beschikbaar waar dat nodig is.',
+    practice: [
+      'Steeds een volgende haalbare stap kiezen en oefenen',
+      'Leren wanneer u iets zelf kunt en wanneer hulp vragen passend is',
+      'Eigen afspraken en keuzes leren maken',
+      'Ondersteuning afbouwen waar dat kan en behouden waar dat nodig is',
+    ],
+  },
+  {
+    icon: 'calendar',
+    slug: 'plannen-en-organiseren',
+    title: 'Plannen en organiseren',
+    lead: 'Overzicht helpt om taken te beginnen, afspraken na te komen en ruimte te houden voor rust. Samen zoeken we een manier van plannen die praktisch en vol te houden is.',
+    practice: [
+      'Taken opdelen in duidelijke en haalbare stappen',
+      'Een agenda, weekplanning of herinneringen leren gebruiken',
+      'Prioriteiten stellen en afspraken voorbereiden',
+      'Balans aanbrengen tussen inspanning en rust',
+    ],
+  },
+  {
+    icon: 'independence',
+    slug: 'praktische-vaardigheden',
+    title: 'Praktische vaardigheden in het dagelijks leven',
+    lead: 'Dagelijkse vaardigheden worden begrijpelijker door ze samen te oefenen op de plek waar ze nodig zijn. Eerst voordoen, dan samen doen en uiteindelijk zoveel mogelijk zelf doen.',
+    practice: [
+      'Oefenen met huishouden, verzorging en koken',
+      'Ondersteuning bij reizen, boodschappen en administratie',
+      'Nieuwe handelingen stap voor stap aanleren',
+      'Vaardigheden herhalen totdat ze vertrouwd voelen',
+    ],
+  },
+  {
+    icon: 'social',
+    slug: 'sociale-vaardigheden',
+    title: 'Sociale vaardigheden en contacten',
+    lead: 'Contact maken, een grens aangeven en samen iets doen. We oefenen in alledaagse situaties en kijken wat helpt om contacten prettig en begrijpelijk te houden.',
+    practice: [
+      'Gesprekken beginnen, voeren en afronden',
+      'Grenzen en wensen leren aangeven',
+      'Omgaan met misverstanden, afwijzing of onduidelijkheid',
+      'Contacten met gezin, vrienden en andere betrokkenen onderhouden',
+    ],
+  },
+  {
+    icon: 'compass',
+    slug: 'school-werk-daginvulling',
+    title: 'School, werk en daginvulling',
+    lead: 'Een passende invulling van de dag geeft structuur, betekenis en mogelijkheden om te groeien. We kijken samen wat haalbaar is en welke ondersteuning daarbij nodig is.',
+    practice: [
+      'Een haalbaar ritme rond school, werk of dagbesteding opbouwen',
+      'Afspraken voorbereiden en overzicht houden',
+      'Onderzoeken welke activiteiten aansluiten bij interesses en mogelijkheden',
+      'Omgaan met spanning, verwachtingen en veranderingen',
+    ],
+  },
+  {
     icon: 'change',
     slug: 'veranderingen',
     title: 'Omgaan met veranderingen',
-    lead: 'Een nieuwe school, andere begeleiding, een verhuizing of iets dat anders loopt dan gedacht. Verandering vraagt voorbereiding, geen verrassing.',
+    lead: 'Een nieuwe school, andere begeleiding, een verhuizing of iets dat anders loopt dan gedacht. Verandering vraagt voorbereiding en passende ondersteuning.',
     practice: [
       'Vooraf weten wat er komt, in stappen die te volgen zijn',
       'Oefenen met situaties die onzeker of nieuw voelen',
-      'Samen kijken wat helpt als het tóch anders gaat dan gepland',
-      'Ruimte om bij te komen, in plaats van meteen door naar het volgende',
-    ],
-  },
-  {
-    icon: 'selfReliance',
-    slug: 'zelfredzaamheid',
-    title: 'Zelfredzaamheid',
-    lead: 'Zelf kunnen wat eerder lastig was. Klein beginnen, in het echte leven oefenen — voordoen, samen doen, zelf doen.',
-    practice: [
-      'Huishouden, verzorging, koken, reizen of administratie: wat op dát moment telt',
-      'Oefenen waar het gebeurt, niet alleen erover praten',
-      'Fouten mogen, opnieuw proberen, zonder oordeel',
-      'Steeds een stukje meer zelf, met een vangnet dat past',
-    ],
-  },
-  {
-    icon: 'confidence',
-    slug: 'zelfvertrouwen',
-    title: 'Vergroten van zelfvertrouwen',
-    lead: 'Zelfvertrouwen groeit niet van een pep-talk. Het groeit van dingen die lukken — en van iemand die dat met je meeziet.',
-    practice: [
-      'Kleine successen zichtbaar maken, niet alleen de grote stappen',
-      'Durven oefenen in situaties die spannend zijn',
-      'Stoppen met alleen kijken naar wat misgaat',
-      'Taal geven aan “dit kan ik wél”',
+      'Samen kijken wat helpt als het anders gaat dan gepland',
+      'Ruimte nemen om aan een nieuwe situatie te wennen',
     ],
   },
   {
     icon: 'emotion',
     slug: 'emotieregulatie',
     title: 'Emotieregulatie',
-    lead: 'Boos, bang, overprikkeld of juist nergens meer bij kunnen. Eerst herkennen wat er gebeurt, daarna weten wat helpt om weer bij jezelf te komen.',
+    lead: 'Boos, bang, overprikkeld of juist nergens meer bij kunnen. Eerst herkennen wat er gebeurt, daarna ontdekken wat helpt om weer tot rust te komen.',
     practice: [
-      'Signalen van spanning eerder zien — in het lijf, in gedrag, in de sfeer',
-      'Manieren om tot rust te komen die bij iemand passen, niet bij een protocol',
+      'Signalen van spanning eerder leren herkennen',
+      'Manieren vinden om tot rust te komen die bij u passen',
       'Woorden geven aan wat er vanbinnen gebeurt',
-      'Voorkomen dat het telkens tot een knal of een shutdown komt',
+      'Voorbereiden op situaties die spanning kunnen oproepen',
+    ],
+  },
+  {
+    icon: 'confidence',
+    slug: 'zelfvertrouwen',
+    title: 'Zelfvertrouwen vergroten',
+    lead: 'Zelfvertrouwen groeit door ervaringen die lukken en door te zien welke stappen al zijn gezet. We maken vooruitgang zichtbaar en oefenen met situaties die nog spannend zijn.',
+    practice: [
+      'Kleine successen herkennen en benoemen',
+      'Talenten en sterke kanten leren inzetten',
+      'In een veilig tempo oefenen met nieuwe situaties',
+      'Leren omgaan met fouten en tegenslagen',
     ],
   },
   {
     icon: 'growth',
-    slug: 'ontwikkeling',
+    slug: 'persoonlijke-ontwikkeling',
     title: 'Persoonlijke ontwikkeling',
-    lead: 'Wie ben je, wat wil je, waar word je rustig van. Groei in eigen tempo — niet een traject dat voor je is bedacht.',
+    lead: 'Wie bent u, wat wilt u en wat past bij u? We ondersteunen groei in uw eigen tempo en sluiten aan bij uw mogelijkheden, interesses en doelen.',
     practice: [
-      'Talenten en interesses serieus nemen, ook als ze klein of anders lijken',
-      'Uitproberen zonder meteen een heel levensplan te hoeven hebben',
-      'Zelf keuzes oefenen, en de gevolgen daarvan leren kennen',
-      'Vooruitkijken naar een leven dat ergens over gaat',
-    ],
-  },
-  {
-    icon: 'social',
-    slug: 'sociaal',
-    title: 'Sociale vaardigheden',
-    lead: 'Contact maken, je grens aangeven, samen iets doen. In het echt, op de plekken waar het ertoe doet — thuis, school, werk, vrije tijd.',
-    practice: [
-      'Oefenen in alledaagse situaties, niet alleen in een oefengesprek',
-      'Aangeven wat je wel en niet wilt, zonder dat het meteen misgaat',
-      'Omgaan met misverstanden, afwijzing of onduidelijkheid',
-      'Relaties met gezin, vrienden en andere betrokkenen houdbaar houden',
-    ],
-  },
-  {
-    icon: 'independence',
-    slug: 'zelfstandigheid',
-    title: 'Toewerken naar meer zelfstandigheid',
-    lead: 'Niet in één keer alleen, maar stap voor stap meer eigen regie. Loslaten waar het kan, steun houden waar het nodig is.',
-    practice: [
-      'De volgende concrete stap: wonen, school, werk of vrije tijd',
-      'Weten wanneer je hulp vraagt — en wanneer je het zelf doet',
-      'Eigen afspraken, eigen keuzes, eigen tempo',
-      'Toewerken naar een situatie waarin iemand zelf verder kan',
+      'Talenten en interesses onderzoeken',
+      'Persoonlijke doelen formuleren en in stappen uitvoeren',
+      'Zelf keuzes maken en de gevolgen daarvan leren overzien',
+      'Vooruitkijken naar een betekenisvolle toekomst',
     ],
   },
 ] as const;
@@ -123,7 +147,7 @@ export const values = [
 ] as const;
 
 export const identityPoints = [
-  { icon: 'people', title: 'Ervaren & betrokken professionals' },
+  { icon: 'people', title: 'Ervaren & betrokken zorgprofessionals' },
   { icon: 'shield', title: 'Veilige en vertrouwde omgeving' },
   { icon: 'person', title: 'Persoonlijke aanpak, geen standaard oplossingen' },
 ] as const;
