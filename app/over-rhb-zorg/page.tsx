@@ -39,7 +39,6 @@ export default function OverRhbZorg() {
 
       <section className="about-grid page-shell">
         <article>
-          <span className="section-index">01</span>
           <h2>Onze missie</h2>
           <p>
             Wij geloven dat ieder mens de kracht heeft om vooruit te komen. Onze missie
@@ -48,16 +47,14 @@ export default function OverRhbZorg() {
           </p>
         </article>
         <article>
-          <span className="section-index">02</span>
           <h2>Onze visie</h2>
           <p>
             Wij bouwen aan een samenleving waarin mensen gezien worden, mee kunnen doen
             en ondersteuning krijgen die past bij hun situatie. Persoonlijk, betrokken
-            en betrouwbaar — met oog voor wie zij zijn en wat zij nodig hebben.
+            en betrouwbaar, met oog voor wie zij zijn en wat zij nodig hebben.
           </p>
         </article>
         <article className="values-card">
-          <span className="section-index">03</span>
           <h2>Onze waarden</h2>
           <ul>
             {values.map((value) => (

@@ -21,11 +21,11 @@ export const themes = [
     icon: 'structure',
     slug: 'structuur',
     title: 'Structuur en dagritme',
-    lead: 'Een dag die je kunt overzien geeft rust. Geen strak keurslijf, maar een ritme dat past bij hoe iemand leeft — en dat ook vol te houden is als het even tegenzit.',
+    lead: 'Een dag die je kunt overzien geeft rust. Geen strak keurslijf, maar een ritme dat past bij hoe iemand leeft en dat ook vol te houden is als het even tegenzit.',
     practice: [
       'Opstaan, eten, school of werk, en slapen in een volgorde die voorspelbaar voelt',
       'Een week die je kunt nakijken: wat moet, wat mag, wat kan wachten',
-      'Een agenda, pictogrammen of herinneringen die écht gebruikt worden — niet een systeem dat in de la verdwijnt',
+      'Een agenda, pictogrammen of herinneringen die écht gebruikt worden in plaats van een systeem dat in de la verdwijnt',
       'Minder gedoe in huis en in het hoofd, omdat de dag niet elke ochtend opnieuw moet worden uitgevonden',
     ],
   },

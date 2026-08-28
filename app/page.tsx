@@ -1,8 +1,6 @@
 import { KennismakenCta } from './components/KennismakenCta';
-import { BrandIcon } from './components/BrandIcons';
 import { SiteFooter } from './components/SiteFooter';
 import { SiteHeader } from './components/SiteHeader';
-import { services, themes } from './lib/content';
 import { basePath } from './lib/basePath';
 
 export default function Home() {
@@ -57,8 +55,7 @@ export default function Home() {
       </section>
 
       <section className="home-approach page-shell" aria-labelledby="approach-title">
-        <div className="section-copy">
-          <p className="eyebrow">Wat wij doen</p>
+        <div className="section-copy wide">
           <h2 id="approach-title">Ambulante begeleiding, gericht op wat <span>wél</span> kan.</h2>
           <div className="title-rule" aria-hidden="true" />
           <p>
@@ -68,60 +65,29 @@ export default function Home() {
           </p>
           <a className="text-link" href={`${basePath}/wat-wij-doen#themas`}>Bekijk onze begeleiding</a>
         </div>
-
-        <div className="service-list home-service-list">
-          {services.map((service) => (
-            <article className="service-row" key={service.title}>
-              <span className={`service-icon service-icon-${service.icon}`} aria-hidden="true">
-                <BrandIcon name={service.icon} />
-              </span>
-              <div>
-                <h3>{service.title}</h3>
-                <p>{service.text}</p>
-              </div>
-            </article>
-          ))}
-        </div>
       </section>
 
       <section className="home-themes" aria-labelledby="themes-title">
         <div className="page-shell">
           <div className="section-copy wide">
-            <p className="eyebrow">Samen werken aan</p>
             <h2 id="themes-title">Waaraan kunnen we <span>werken</span>?</h2>
             <div className="title-rule" aria-hidden="true" />
+            <p>
+              Samen kijken we welke ondersteuning nodig is om stap voor stap
+              vooruit te komen.
+            </p>
+            <a className="text-link" href={`${basePath}/wat-wij-doen#themas`}>Bekijk alle thema’s</a>
           </div>
-          <ul className="theme-grid">
-            {themes.map((theme) => (
-              <li key={theme.title}>
-                <a href={`${basePath}/wat-wij-doen#${theme.slug}`}>
-                  <span className="theme-icon" aria-hidden="true">
-                    <BrandIcon name={theme.icon} />
-                  </span>
-                  <span>{theme.title}</span>
-                </a>
-              </li>
-            ))}
-          </ul>
         </div>
       </section>
 
       <section className="home-about" aria-labelledby="home-about-title">
-        <div className="page-shell home-about-grid">
-          <div className="section-copy">
+        <div className="page-shell">
+          <div className="section-copy wide">
             <p className="eyebrow">Over RHB Zorg</p>
             <h2 id="home-about-title">Een kleinschalige stichting met een warm hart voor mensen.</h2>
-            <div className="title-rule" aria-hidden="true" />
-            <p>
-              Wij bieden ambulante begeleiding aan mensen die ondersteuning nodig
-              hebben bij het vergroten van hun zelfredzaamheid, structuur en
-              zelfstandigheid — met aandacht, respect en zonder oordeel.
-            </p>
-            <a className="text-link" href={`${basePath}/over-rhb-zorg`}>Meer over wie wij zijn</a>
+            <a className="text-link" href={`${basePath}/over-rhb-zorg`}>Meer over wie we zijn</a>
           </div>
-          <blockquote className="home-quote">
-            <p>Met aandacht.<br /><em>Vooruit door verbinding.</em></p>
-          </blockquote>
         </div>
       </section>
 
