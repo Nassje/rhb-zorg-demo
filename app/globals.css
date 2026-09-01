@@ -192,6 +192,7 @@ textarea:focus-visible {
 }
 .hero h1 span { color: var(--orange); }
 .title-rule { width: 66px; height: 4px; margin: 30px 0 24px; background: var(--orange); }
+.hero:not(.services-cinematic):not(.about-cinematic) .title-rule { margin-top: 42px; }
 .intro { max-width: 570px; margin: 0; color: #526061; font-size: clamp(16px, 1.15vw, 18px); line-height: 1.72; }
 .hero .intro { max-width: 620px; color: rgba(255,255,255,.86); text-shadow: 0 2px 18px rgba(0,0,0,.24); }
 .hero-actions { display: flex; flex-wrap: wrap; gap: 14px; margin-top: 34px; }

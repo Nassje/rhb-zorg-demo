@@ -5,8 +5,8 @@ export function KennismakenCta() {
     <section className="cta-band" aria-labelledby="cta-title">
       <div className="page-shell cta-band-inner">
         <div>
-          <p className="eyebrow light">Kennismaken</p>
-          <h2 id="cta-title">Wilt u weten wat RHB Zorg kan betekenen?</h2>
+          <p className="eyebrow light">Kennismaken.</p>
+          <h2 id="cta-title">Wilt u weten wat RHB Zorg voor u kan betekenen?</h2>
           <p>
             We bespreken uw ondersteuningsvraag en bekijken samen of onze ambulante
             begeleiding aansluit bij uw persoonlijke situatie.

@@ -10,7 +10,7 @@ export default function Home() {
 
       <section className="hero" aria-labelledby="hero-title">
         <div className="hero-copy">
-          <h1 id="hero-title">Samen kijken<br />naar wat <span>wél</span> kan.</h1>
+          <h1 id="hero-title">Samen kijken<br />naar wat <span>wél kan?</span></h1>
           <div className="title-rule" aria-hidden="true" />
           <p className="intro">
             RHB Zorg biedt ambulante begeleiding aan mensen die ondersteuning nodig
@@ -56,7 +56,7 @@ export default function Home() {
 
       <section className="home-approach page-shell" aria-labelledby="approach-title">
         <div className="section-copy wide">
-          <h2 id="approach-title">Ambulante begeleiding, gericht op wat <span>wél</span> kan.</h2>
+          <h2 id="approach-title">Ambulante begeleiding, gericht op wat <span>wél kan.</span></h2>
           <div className="title-rule" aria-hidden="true" />
           <p>
             We kijken niet alleen naar wat moeilijk gaat, maar vooral naar welke
@@ -70,7 +70,7 @@ export default function Home() {
       <section className="home-themes" aria-labelledby="themes-title">
         <div className="page-shell">
           <div className="section-copy wide">
-            <h2 id="themes-title">Waaraan kunnen we <span>werken</span>?</h2>
+            <h2 id="themes-title">Waaraan kunnen we <span>werken?</span></h2>
             <div className="title-rule" aria-hidden="true" />
             <p>
               Samen kijken we welke ondersteuning nodig is om stap voor stap
@@ -84,7 +84,7 @@ export default function Home() {
       <section className="home-about" aria-labelledby="home-about-title">
         <div className="page-shell">
           <div className="section-copy wide">
-            <p className="eyebrow">Over RHB Zorg</p>
+            <p className="eyebrow">Over RHB Zorg.</p>
             <h2 id="home-about-title">Een kleinschalige stichting met een warm hart voor mensen.</h2>
             <a className="text-link" href={`${basePath}/over-rhb-zorg`}>Meer over wie we zijn</a>
           </div>

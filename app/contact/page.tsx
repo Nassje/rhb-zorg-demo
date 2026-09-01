@@ -13,8 +13,8 @@ export default function Contact() {
       <SiteHeader active="/contact" />
       <section className="contact-page page-shell">
         <div className="page-intro">
-          <p className="eyebrow">Kennismaken</p>
-          <h1>Samen kijken naar wat <span>wél</span> kan.</h1>
+          <p className="eyebrow">Kennismaken.</p>
+          <h1>Samen kijken naar wat <span>wél kan.</span></h1>
           <div className="title-rule" aria-hidden="true" />
           <p>
             Heeft u een vraag over onze ambulante begeleiding of wilt u bespreken of
@@ -23,8 +23,8 @@ export default function Contact() {
         </div>
 
         <section className="contact-form-card" aria-labelledby="contact-form-title">
-          <p className="eyebrow light">Aanmelden & informatie</p>
-          <h2 id="contact-form-title">Contactformulier</h2>
+          <p className="eyebrow light">Aanmelden & informatie.</p>
+          <h2 id="contact-form-title">Contactformulier.</h2>
           <form className="contact-form">
             <div className="form-field">
               <label htmlFor="name">Naam</label>

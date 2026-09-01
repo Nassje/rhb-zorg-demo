@@ -17,8 +17,8 @@ export default function OverRhbZorg() {
       <SiteHeader active="/over-rhb-zorg" overlay />
       <section className="hero about-cinematic" aria-labelledby="about-title">
         <div className="hero-copy">
-          <p className="eyebrow light">Wie wij zijn</p>
-          <h1 id="about-title">Over <span>RHB Zorg</span></h1>
+          <p className="eyebrow light">Wie wij zijn.</p>
+          <h1 id="about-title">Over <span>RHB Zorg.</span></h1>
           <div className="title-rule" aria-hidden="true" />
           <p className="intro">
             RHB Zorg is een kleinschalige stichting die ambulante begeleiding biedt
@@ -39,7 +39,7 @@ export default function OverRhbZorg() {
 
       <section className="about-grid page-shell">
         <article>
-          <h2>Onze missie</h2>
+          <h2>Onze missie.</h2>
           <p>
             Wij geloven dat ieder mens de kracht heeft om vooruit te komen. Onze missie
             is om mensen de juiste ondersteuning te bieden om regie te nemen,
@@ -47,7 +47,7 @@ export default function OverRhbZorg() {
           </p>
         </article>
         <article>
-          <h2>Onze visie</h2>
+          <h2>Onze visie.</h2>
           <p>
             Wij bouwen aan een samenleving waarin mensen gezien worden, mee kunnen doen
             en ondersteuning krijgen die past bij hun situatie. Persoonlijk, betrokken
@@ -55,7 +55,7 @@ export default function OverRhbZorg() {
           </p>
         </article>
         <article className="values-card">
-          <h2>Onze waarden</h2>
+          <h2>Onze waarden.</h2>
           <ul>
             {values.map((value) => (
               <li key={value.title}>
@@ -71,8 +71,8 @@ export default function OverRhbZorg() {
 
       <section className="identity-panel page-shell">
         <article>
-          <p className="eyebrow">Wie wij zijn</p>
-          <h2>Betrokken zorgprofessionals</h2>
+          <p className="eyebrow">Wie wij zijn.</p>
+          <h2>Betrokken zorgprofessionals.</h2>
           <p>
             Wij werken met ervaren zorgprofessionals die cliënten ondersteunen bij
             uiteenlopende hulpvragen. Onze aanpak is persoonlijk, praktisch en afgestemd
@@ -90,8 +90,8 @@ export default function OverRhbZorg() {
           </ul>
         </article>
         <article>
-          <p className="eyebrow">De stichting</p>
-          <h2>Samen kansen creëren</h2>
+          <p className="eyebrow">De stichting.</p>
+          <h2>Samen kansen creëren.</h2>
           <p>
             Alles wat wij doen draait om het ondersteunen van mensen en het creëren van kansen.
             Onze ambulante begeleiding kan onder andere worden ingezet vanuit een PGB.

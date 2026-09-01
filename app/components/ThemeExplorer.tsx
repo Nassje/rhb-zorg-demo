@@ -45,7 +45,7 @@ export function ThemeExplorer() {
               <div className="theme-accordion-panel-inner">
                 <div className="theme-accordion-body">
                   <p>{theme.lead}</p>
-                  <p className="theme-accordion-label">In de praktijk</p>
+                  <p className="theme-accordion-label">In de praktijk.</p>
                   <ul>
                     {theme.practice.map((item) => (
                       <li key={item}>{item}</li>

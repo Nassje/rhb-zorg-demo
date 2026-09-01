@@ -19,8 +19,8 @@ export default function WatWijDoen() {
       <SiteHeader active="/wat-wij-doen" overlay />
       <section className="hero services-cinematic" aria-labelledby="services-title">
         <div className="hero-copy">
-          <p className="eyebrow light">Onze begeleiding</p>
-          <h1 id="services-title">Wat wij <span>doen</span></h1>
+          <p className="eyebrow light">Onze begeleiding.</p>
+          <h1 id="services-title">Wat wij <span>doen.</span></h1>
           <div className="title-rule" aria-hidden="true" />
           <p className="intro">
             Ambulante begeleiding die aansluit bij uw ondersteuningsbehoefte en
@@ -43,7 +43,7 @@ export default function WatWijDoen() {
 
       <section className="page-shell service-page">
         <div className="section-copy service-section-heading">
-          <p className="eyebrow">Onze werkwijze</p>
+          <p className="eyebrow">Onze werkwijze.</p>
           <h2>Begeleiding die past bij uw <span>situatie.</span></h2>
           <div className="title-rule" aria-hidden="true" />
         </div>
@@ -63,7 +63,7 @@ export default function WatWijDoen() {
         </div>
 
         <section className="support-themes" aria-labelledby="support-themes-title">
-          <p className="eyebrow">Ondersteuningsgebieden</p>
+          <p className="eyebrow">Ondersteuningsgebieden.</p>
           <h2 id="support-themes-title">Waarbij kunnen wij ondersteunen?</h2>
           <div className="support-themes-grid">
             <figure className="support-themes-image">
@@ -83,8 +83,8 @@ export default function WatWijDoen() {
       <section className="together-band" aria-labelledby="together-title">
         <div className="page-shell together-grid">
           <article>
-            <p className="eyebrow">Samen verder</p>
-            <h2 id="together-title">Niet alleen, maar samen</h2>
+            <p className="eyebrow">Samen verder.</p>
+            <h2 id="together-title">Niet alleen, maar samen.</h2>
             <p>
               Waar nodig werken we samen met ouders, het netwerk en andere betrokken
               zorgprofessionals.
@@ -95,7 +95,7 @@ export default function WatWijDoen() {
               <BrandIcon name="person" />
             </span>
             <div>
-              <strong>Begeleiding via PGB</strong>
+              <strong>Begeleiding via PGB.</strong>
               <p>
                 Heeft u een PGB? Onze ambulante begeleiding kan, afhankelijk van uw
                 indicatie en zorgvraag, vanuit een PGB worden ingezet. Tijdens een
