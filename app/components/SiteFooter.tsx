@@ -1,5 +1,6 @@
 import Image from 'next/image';
 import { basePath } from '../lib/basePath';
+import { contactDetails } from '../lib/content';
 
 export function SiteFooter() {
   return (
@@ -11,7 +12,8 @@ export function SiteFooter() {
       </div>
       <div className="footer-info">
         <strong>RHB Zorg</strong>
-        <small>Contact- en organisatiedetails worden later toegevoegd.</small>
+        <p><a href={contactDetails.phoneHref}>{contactDetails.phone}</a></p>
+        <p>Instagram: <a href={contactDetails.instagramHref}>{contactDetails.instagram}</a></p>
       </div>
       <div className="footer-mark" aria-hidden="true">
         <Image src={`${basePath}/rhb-logo-hq.png`} alt="" width={1536} height={1024} />

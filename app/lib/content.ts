@@ -1,3 +1,10 @@
+export const contactDetails = {
+  phone: '085 333 4220',
+  phoneHref: 'tel:+31853334220',
+  instagram: '@rhb_zorg',
+  instagramHref: 'https://www.instagram.com/rhb_zorg/',
+} as const;
+
 export const services = [
   {
     icon: 'person',

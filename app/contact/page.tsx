@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import { SiteFooter } from '../components/SiteFooter';
 import { SiteHeader } from '../components/SiteHeader';
+import { contactDetails } from '../lib/content';
 
 export const metadata: Metadata = {
   title: 'Contact | RHB Zorg',
@@ -20,6 +21,16 @@ export default function Contact() {
             Heeft u een vraag over onze ambulante begeleiding of wilt u bespreken of
             RHB Zorg bij uw ondersteuningsvraag past? Neem gerust contact met ons op.
           </p>
+          <dl className="contact-details">
+            <div>
+              <dt>Telefoon</dt>
+              <dd><a href={contactDetails.phoneHref}>{contactDetails.phone}</a></dd>
+            </div>
+            <div>
+              <dt>Instagram</dt>
+              <dd><a href={contactDetails.instagramHref}>{contactDetails.instagram}</a></dd>
+            </div>
+          </dl>
         </div>
 
         <section className="contact-form-card" aria-labelledby="contact-form-title">

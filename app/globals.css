@@ -768,6 +768,13 @@ textarea:focus-visible {
 }
 .contact-page .page-intro { padding-top: 0; }
 .contact-page h1 { font-size: clamp(48px, 5.4vw, 78px); }
+.contact-details { display: grid; gap: 22px; margin: 32px 0 0; }
+.contact-details dt { margin-bottom: 6px; color: var(--muted); font-size: 14px; font-weight: 700; }
+.contact-details dd { margin: 0; font-size: 20px; font-weight: 700; }
+.contact-details a,
+.footer-info a { text-decoration: underline; text-underline-offset: 4px; }
+.contact-details a:hover { color: var(--teal-light); }
+.footer-info a:hover { color: #4cb0b5; }
 .contact-placeholder,
 .contact-form-card { padding: clamp(38px, 5vw, 68px); }
 .contact-placeholder h2,
