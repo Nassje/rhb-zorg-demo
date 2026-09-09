@@ -48,13 +48,12 @@ export default function WatWijDoen() {
           <div className="title-rule" aria-hidden="true" />
         </div>
         <div className="service-list page-service-list" aria-label="Onze werkwijze">
-          {services.map((service, index) => (
+          {services.map((service) => (
             <article className="service-row" key={service.title}>
               <span className={`service-icon service-icon-${service.icon}`} aria-hidden="true">
                 <BrandIcon name={service.icon} />
               </span>
               <div>
-                <span className="section-index">{String(index + 1).padStart(2, '0')}</span>
                 <h2>{service.title}</h2>
                 <p>{service.text}</p>
               </div>

@@ -687,7 +687,6 @@ textarea:focus-visible {
   padding: 95px 0 80px;
 }
 .about-grid article { position: relative; }
-.section-index { color: var(--orange); font-size: 12px; font-weight: 800; letter-spacing: .14em; }
 .about-grid h2,
 .identity-panel h2 { margin: 12px 0 18px; color: var(--teal); font-size: 23px; text-transform: uppercase; }
 .about-grid h2 { margin-top: 0; }
