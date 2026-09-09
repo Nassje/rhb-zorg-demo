@@ -1,4 +1,6 @@
 export const contactDetails = {
+  email: 'info@rhbzorg.nl',
+  emailHref: 'mailto:info@rhbzorg.nl',
   phone: '085 333 4220',
   phoneHref: 'tel:+31853334220',
   instagram: '@rhb_zorg',

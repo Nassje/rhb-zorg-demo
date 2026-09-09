@@ -12,6 +12,7 @@ export function SiteFooter() {
       </div>
       <div className="footer-info">
         <strong>RHB Zorg</strong>
+        <p><a href={contactDetails.emailHref}>{contactDetails.email}</a></p>
         <p><a href={contactDetails.phoneHref}>{contactDetails.phone}</a></p>
         <p>Instagram: <a href={contactDetails.instagramHref}>{contactDetails.instagram}</a></p>
       </div>
