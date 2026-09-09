@@ -2,7 +2,7 @@ export const services = [
   {
     icon: 'person',
     title: 'Begeleiding op maat.',
-    text: 'Wij bieden individuele begeleiding die aansluit bij uw doelen en ondersteuningsbehoefte. Samen kijken we welke ondersteuning nodig is om uw zelfstandigheid en eigen regie te vergroten.',
+    text: 'Wij bieden individuele begeleiding die aansluit bij uw doelen en ondersteuningsbehoefte. Samen kijken we wat nodig is om uw zelfstandigheid en eigen regie te vergroten.',
   },
   {
     icon: 'calendar',
@@ -21,10 +21,10 @@ export const themes = [
     icon: 'structure',
     slug: 'structuur',
     title: 'Structuur en dagritme.',
-    lead: 'Een dag die je kunt overzien geeft rust. Geen strak keurslijf, maar een ritme dat past bij hoe iemand leeft en dat ook vol te houden is als het even tegenzit.',
+    lead: 'Een overzichtelijke dag geeft rust. Geen strak keurslijf, maar een ritme dat past bij iemands leven en dat ook vol te houden is als het even tegenzit.',
     practice: [
       'Opstaan, eten, school of werk, en slapen in een volgorde die voorspelbaar voelt.',
-      'Een week die je kunt nakijken: wat moet, wat mag, wat kan wachten.',
+      'Een overzichtelijke weekplanning: wat moet, wat mag en wat kan wachten.',
       'Een agenda, pictogrammen of herinneringen die écht gebruikt worden in plaats van een systeem dat in de la verdwijnt.',
       'Minder gedoe in huis en in het hoofd, omdat de dag niet elke ochtend opnieuw moet worden uitgevonden.',
     ],
@@ -36,7 +36,7 @@ export const themes = [
     lead: 'Zelf kunnen wat eerder lastig was en stap voor stap meer eigen regie nemen. We oefenen in het dagelijks leven en houden ondersteuning beschikbaar waar dat nodig is.',
     practice: [
       'Steeds een volgende haalbare stap kiezen en oefenen.',
-      'Leren wanneer u iets zelf kunt en wanneer hulp vragen passend is.',
+      'Leren wanneer u iets zelf kunt en wanneer het passend is om hulp te vragen.',
       'Eigen afspraken en keuzes leren maken.',
       'Ondersteuning afbouwen waar dat kan en behouden waar dat nodig is.',
     ],

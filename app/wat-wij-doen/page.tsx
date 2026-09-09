@@ -86,8 +86,9 @@ export default function WatWijDoen() {
             <p className="eyebrow">Samen verder.</p>
             <h2 id="together-title">Niet alleen, maar samen.</h2>
             <p>
-              Waar nodig werken we samen met ouders, het netwerk en andere betrokken
-              zorgprofessionals.
+              Goede begeleiding stopt niet bij de voordeur. We kijken ook naar de
+              mensen om iemand heen en werken waar nodig samen met ouders, het
+              netwerk en andere betrokken zorgprofessionals.
             </p>
           </article>
           <article className="pgb-card">

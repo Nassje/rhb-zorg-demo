@@ -73,8 +73,9 @@ export default function Home() {
             <h2 id="themes-title">Waaraan kunnen we <span>werken?</span></h2>
             <div className="title-rule" aria-hidden="true" />
             <p>
-              Samen kijken we welke ondersteuning nodig is om stap voor stap
-              vooruit te komen.
+              We helpen bij het aanbrengen van structuur, het oefenen van dagelijkse
+              vaardigheden en het werken aan persoonlijke doelen. Bekijk de thema’s
+              waarin wij begeleiding kunnen bieden.
             </p>
             <a className="text-link" href={`${basePath}/wat-wij-doen#themas`}>Bekijk alle thema’s</a>
           </div>
