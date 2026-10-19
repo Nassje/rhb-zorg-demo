@@ -87,6 +87,9 @@ export function ContactForm() {
       <p className="form-status">
         Uw bericht wordt via Web3Forms naar {contactDetails.email} verstuurd.
       </p>
+      <p className="form-status">
+        Lees hoe wij omgaan met uw gegevens in onze <a href={`${basePath}/privacyverklaring/`}>privacyverklaring</a>.
+      </p>
       {error && <p className="form-status" role="alert">{error} U kunt ook rechtstreeks mailen naar <a href={contactDetails.emailHref}>{contactDetails.email}</a>.</p>}
     </form>
   );

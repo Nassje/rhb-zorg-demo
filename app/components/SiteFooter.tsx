@@ -16,9 +16,18 @@ export function SiteFooter() {
         <p><a href={contactDetails.phoneHref}>{contactDetails.phone}</a></p>
         <p>Instagram: <a href={contactDetails.instagramHref}>{contactDetails.instagram}</a></p>
       </div>
-      <div className="footer-mark" aria-hidden="true">
-        <Image src={`${basePath}/rhb-logo-hq.png`} alt="" width={1536} height={1024} />
+      <div className="footer-membership">
+        <span>Lid van BVKZ · 2026</span>
+        <a className="footer-bvkz" href="https://www.bvkz.nl/" aria-label="Branchevereniging Kleinschalige Zorg — naar de website van BVKZ">
+          <Image src={`${basePath}/bvkz-logo.svg`} alt="BVKZ — Branchevereniging Kleinschalige Zorg" width={1013} height={314} />
+        </a>
       </div>
+      <nav className="footer-legal" aria-label="Kwaliteit en juridische informatie">
+        <a href={`${basePath}/kwaliteit-veiligheid/`}>Kwaliteit &amp; Veiligheid</a>
+        <a href={`${basePath}/klachtenregeling/`}>Klachtenregeling</a>
+        <a href={`${basePath}/privacyverklaring/`}>Privacyverklaring</a>
+        <a href={`${basePath}/algemene-voorwaarden/`}>Algemene voorwaarden</a>
+      </nav>
     </footer>
   );
 }

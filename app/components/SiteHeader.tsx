@@ -8,6 +8,7 @@ const navigation = [
   { label: 'Home', href: '/' },
   { label: 'Wat wij doen', href: '/wat-wij-doen' },
   { label: 'Over RHB Zorg', href: '/over-rhb-zorg' },
+  { label: 'Kwaliteit & Veiligheid', href: '/kwaliteit-veiligheid' },
   { label: 'Contact', href: '/contact' },
 ];
 

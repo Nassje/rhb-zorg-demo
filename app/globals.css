@@ -37,7 +37,7 @@ textarea:focus-visible {
   display: grid;
   grid-template-columns: 1fr auto auto;
   align-items: center;
-  gap: clamp(32px, 5vw, 86px);
+  gap: clamp(20px, 2.3vw, 34px);
   position: relative;
   z-index: 10;
 }
@@ -102,7 +102,7 @@ textarea:focus-visible {
 .brand-copy small { color: var(--ink); font-size: 11px; white-space: nowrap; }
 .brand-copy small span { color: var(--orange); }
 
-.desktop-nav { display: flex; align-items: center; gap: clamp(24px, 3.2vw, 56px); }
+.desktop-nav { display: flex; align-items: center; gap: clamp(16px, 2vw, 30px); }
 .desktop-nav a {
   padding: 16px 0;
   font-size: 13px;
@@ -192,7 +192,7 @@ textarea:focus-visible {
 }
 .hero h1 span { color: var(--orange); }
 .title-rule { width: 66px; height: 4px; margin: 30px 0 24px; background: var(--orange); }
-.hero:not(.services-cinematic):not(.about-cinematic) .title-rule { margin-top: 42px; }
+.hero:not(.services-cinematic):not(.about-cinematic):not(.quality-cinematic) .title-rule { margin-top: 42px; }
 .intro { max-width: 570px; margin: 0; color: #526061; font-size: clamp(16px, 1.15vw, 18px); line-height: 1.72; }
 .hero .intro { max-width: 620px; color: rgba(255,255,255,.86); text-shadow: 0 2px 18px rgba(0,0,0,.24); }
 .hero-actions { display: flex; flex-wrap: wrap; gap: 14px; margin-top: 34px; }
@@ -802,6 +802,9 @@ textarea:focus-visible {
 }
 .form-field textarea { min-height: 130px; resize: vertical; }
 .form-field select { color-scheme: dark; }
+.contact-form .form-field select { color-scheme: light; }
+.contact-form select option { color: #10282d; background-color: #fff; }
+.contact-form select option:disabled { color: #5c6868; }
 .form-field input:hover,
 .form-field select:hover,
 .form-field textarea:hover,
@@ -1039,4 +1042,126 @@ textarea:focus-visible {
   .theme-accordion-chevron { transition: none; }
   .theme-accordion-panel,
   .theme-accordion-body { transition: none; }
+}
+
+/* Quality, complaints and the policy documents share the existing RHB palette. */
+.desktop-nav a { white-space: nowrap; }
+.policy-page, .complaint-page { padding-bottom: 100px; }
+.policy-intro { max-width: 850px; padding: 46px 0 52px; }
+.policy-intro .eyebrow { margin-bottom: 15px; }
+.policy-intro h1 { margin: 0 0 22px; font-size: clamp(36px, 4.7vw, 64px); line-height: 1.12; letter-spacing: -.045em; overflow-wrap: break-word; }
+.policy-intro > p:not(.eyebrow) { max-width: 740px; font-size: 17px; line-height: 1.75; color: var(--muted); }
+.back-link { display: inline-block; margin-bottom: 34px; color: var(--teal-light); font-size: 13px; font-weight: 700; }
+.back-link:hover, .text-link:hover { text-decoration: underline; text-underline-offset: 4px; }
+.document-version { display: inline-block; margin-top: 10px; color: var(--teal-light); font-size: 13px; font-weight: 700; }
+.policy-layout { display: grid; grid-template-columns: minmax(220px, 290px) minmax(0, 760px); gap: clamp(36px, 6vw, 90px); align-items: start; }
+.policy-index { position: sticky; top: 24px; border-top: 3px solid var(--orange); padding-top: 18px; }
+.policy-index summary { cursor: pointer; font-size: 15px; font-weight: 800; color: var(--teal); }
+.policy-index nav { display: grid; gap: 3px; max-height: 65svh; overflow-y: auto; padding: 15px 8px 4px 0; scrollbar-width: thin; }
+.policy-index a { padding: 9px 10px; border-left: 3px solid transparent; border-radius: 0 5px 5px 0; color: var(--muted); font-size: 13px; line-height: 1.5; transition: color .18s ease, background-color .18s ease; }
+.policy-index a[aria-current="location"] { color: var(--teal); background: #f4e8df; border-left-color: var(--orange); font-weight: 800; }
+.policy-index a:hover, .policy-index a:focus-visible { color: var(--orange); }
+.document-section { scroll-margin-top: 28px; padding: 0 0 34px; margin-bottom: 34px; border-bottom: 1px solid var(--line); }
+.document-section h2 { color: var(--teal); font-size: clamp(23px, 2.4vw, 30px); letter-spacing: -.025em; line-height: 1.3; margin: 0 0 20px; }
+.document-section h3 { font-size: 18px; color: var(--teal); margin: 28px 0 12px; }
+.policy-body p, .policy-body li { font-size: 16px; color: var(--muted); line-height: 1.85; overflow-wrap: anywhere; }
+.policy-body p { margin: 0 0 16px; }
+.policy-body li { padding-left: 4px; margin-bottom: 7px; }
+.policy-body ul { padding-left: 22px; margin: 18px 0 24px; }
+.policy-body p a, .complaint-privacy a, .form-unavailable a, .form-status a { text-decoration: underline; text-underline-offset: 3px; }
+.text-link { display: inline-block; color: var(--teal-light); font-weight: 750; font-size: 14px; }
+.policy-intro .text-link::after, .policy-body .text-link::after { content: none; }
+.policy-actions { display: flex; flex-wrap: wrap; gap: 12px; margin: 28px 0 18px; }
+.external-complaints { margin-top: 20px; }
+.external-complaints .button { gap: 12px; }
+.policy-body .availability-note { font-size: 13px; margin: 12px 0 0; line-height: 1.6; }
+.button:disabled { opacity: 1; color: #566463; background: #e5e8e4; border: 1px solid #cbd2cc; cursor: not-allowed; box-shadow: none; transform: none; }
+/* Match the cinematic hero used on About and Services. */
+.quality-hero-image { position: absolute; inset: 0; width: 100%; height: 100%; display: block; object-fit: cover; object-position: center 43%; }
+.quality-art { filter: saturate(.86) contrast(1.04); }
+.quality-cinematic .hero-art::before {
+  background:
+    linear-gradient(90deg, rgba(3,25,29,.96) 0%, rgba(3,25,29,.83) 30%, rgba(3,25,29,.4) 58%, rgba(3,25,29,.17) 100%),
+    linear-gradient(0deg, rgba(3,25,29,.7) 0%, transparent 48%, rgba(3,25,29,.25) 100%);
+}
+.quality-hero-intro p { margin: 0; }
+.quality-hero-intro p + p { margin-top: 14px; }
+.quality-layout .policy-index { top: 112px; }
+.quality-layout .document-section { scroll-margin-top: 118px; }
+.quality-layout { padding-top: 72px; padding-bottom: 70px; }
+.complaint-page { max-width: 1040px; }
+.complaint-form-panel { background: white; padding: clamp(24px, 5vw, 58px); border: 1px solid var(--line); border-radius: 8px; }
+.complaint-form-panel h2 { margin: 0 0 24px; color: var(--teal); font-size: 28px; }
+.form-unavailable { border-left: 3px solid var(--orange); padding: 3px 0 3px 20px; margin-bottom: 38px; }
+.form-unavailable strong { color: var(--teal); line-height: 1.5; }
+.form-unavailable p { color: var(--muted); font-size: 15px; line-height: 1.75; margin-bottom: 0; }
+.complaint-form fieldset { min-width: 0; border: 0; border-top: 1px solid var(--line); margin: 0 0 30px; padding: 24px 0 0; }
+.complaint-form legend { padding: 0 16px 0 0; color: var(--teal); font-size: 19px; font-weight: 800; }
+.complaint-field-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0 24px; }
+.complaint-form .form-field { margin-bottom: 23px; }
+.complaint-form label { color: var(--ink); font-size: 14px; line-height: 1.6; }
+.complaint-form input, .complaint-form textarea, .complaint-form select { width: 100%; min-width: 0; background: #f8f9f7; color: #626d69; border: 1px solid #d4dbd6; border-radius: 5px; padding: 13px 15px; font: inherit; opacity: 1; }
+.complaint-form :disabled { cursor: not-allowed; }
+.complaint-form .form-field :disabled { color-scheme: light; background: #f8f9f7; color: #626d69; border-color: #d4dbd6; }
+.complaint-form input[type=file] { font-size: 13px; }
+.complaint-privacy h3 { font-size: 18px; color: var(--teal); }
+.complaint-privacy p { color: var(--muted); font-size: 14px; line-height: 1.8; margin-bottom: 24px; }
+.footer-membership { align-self: center; max-width: 290px; }
+.footer-membership > span { display: block; font-size: 12px; font-weight: 700; margin-bottom: 12px; color: #d1dddc; }
+.footer-bvkz { display: block; background: white; border-radius: 6px; padding: 18px; }
+.footer-bvkz img { display: block; width: 100%; height: auto; }
+.footer-legal { grid-column: 1 / -1; display: flex; flex-wrap: wrap; gap: 20px 32px; border-top: 1px solid rgba(255,255,255,.2); padding-top: 26px; }
+.footer-legal a { color: #d1dddc; font-size: 13px; line-height: 1.6; }
+.footer-legal a:hover { color: white; text-decoration: underline; text-underline-offset: 4px; }
+@media (min-width: 1021px) and (max-width: 1180px) {
+  .site-header { width: calc(100% - 48px); grid-template-columns: 1fr auto; }
+  .home-header { width: 100%; padding-inline: 24px; }
+  .desktop-nav, .header-cta { display: none; }
+  .mobile-menu { display: block; position: relative; }
+  .mobile-menu summary { width: 45px; height: 45px; display: grid; place-content: center; gap: 5px; border: 1px solid var(--line); border-radius: 50%; cursor: pointer; list-style: none; }
+  .mobile-menu summary::-webkit-details-marker { display: none; }
+  .mobile-menu summary span { width: 18px; height: 2px; background: var(--teal); }
+  .mobile-menu nav { position: absolute; right: 0; top: 56px; min-width: 240px; padding: 12px; display: grid; border: 1px solid var(--line); border-radius: 12px; background: white; color: var(--ink); box-shadow: 0 18px 50px rgba(16,40,45,.12); }
+  .mobile-menu nav a { padding: 12px 14px; font-size: 13px; font-weight: 700; text-transform: uppercase; }
+  .home-header:not(.is-scrolled) .mobile-menu summary { border-color: rgba(255,255,255,.5); }
+  .home-header:not(.is-scrolled) .mobile-menu summary span { background: white; }
+}
+@media (max-width: 900px) {
+  .policy-layout { grid-template-columns: 1fr; gap: 36px; }
+  .policy-index { position: static; }
+  .policy-index nav { max-height: 240px; }
+}
+@media (max-width: 720px) {
+  .policy-intro { padding: 28px 0 36px; }
+  .policy-intro > p:not(.eyebrow) { font-size: 16px; }
+  .policy-page, .complaint-page { padding-bottom: 60px; }
+  .quality-cinematic .hero-copy { width: 100%; padding-inline: 24px; }
+  .quality-cinematic .hero-actions { width: fit-content; }
+  .quality-cinematic .hero-actions .button { padding-inline: 18px; font-size: 11px; }
+  .quality-hero-image {
+    height: 72% !important;
+    object-position: 78% top;
+    mask-image: linear-gradient(#000 65%, transparent 100%);
+  }
+  .quality-cinematic .hero-art::before {
+    background:
+      linear-gradient(180deg, rgba(4,27,31,.3) 0%, rgba(4,27,31,.23) 26%, rgba(4,27,31,.77) 58%, rgba(4,27,31,.97) 100%),
+      linear-gradient(90deg, rgba(4,27,31,.25), transparent 70%, rgba(4,27,31,.12));
+  }
+  .quality-layout .document-section { scroll-margin-top: 94px; }
+  .quality-layout { padding-top: 40px; padding-bottom: 36px; }
+  .complaint-field-grid { grid-template-columns: 1fr; }
+  .complaint-form .button { width: 100%; min-width: 0; padding-inline: 12px; }
+  .policy-actions { flex-direction: column; }
+  .policy-actions .button, .external-complaints .button { width: 100%; min-width: 0; }
+  .footer-legal { display: grid; gap: 16px; }
+}
+@media print {
+  .site-header, .site-footer, .policy-index, .policy-intro .back-link, .policy-body > .back-link { display: none; }
+  .policy-page { width: 100%; padding: 0; }
+  .policy-layout { display: block; }
+  .policy-intro { padding: 0 0 20px; }
+  .document-section h2, .document-section h3 { break-after: avoid; }
+  .document-section { border: 0; margin-bottom: 20px; padding-bottom: 0; }
+  .policy-body p, .policy-body li { color: black; }
 }
